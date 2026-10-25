@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFM & KMEANS </title>
+</head>
+<body>
+    <form action="/predict" method="post">
+
+        <label >recency (Days Since Last Order): </label>
+        <input type="number" name="recency" min="0" placeholder="recency" required>
+
+        <br>
+
+        <label >frequency(Total Orders): </label>
+        <input type="number" name="frequency" min="1" placeholder="frequency" required>
+        <br>
+
+        <label >monetary(Total Spending): </label>
+        <input type="number" name="monetary" min="0" placeholder="monetary"  step="any" required>
+        <br>
+
+        <button type="submit">Predict Segment</button>
+
+    </form>
+    <br>
+
+    {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+    {% if segment %}
+        <h2> prediction_text : {{segment}}</h2>
+    {% endif %}
+
+
+</body>
+</html>

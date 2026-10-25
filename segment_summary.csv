@@ -1,0 +1,5 @@
+segment,customers,median_days_since_last_order,median_order,median_spend,total_revenue,customers_%,revenue_%,marketing_action
+Champions,713,8.0,10.0,3722.8,5766757.1,16.4,64.9,"Early access to new collection, no discount (Email)"
+Regular,1166,57.0,4.0,1345.2,2100873.0,26.9,23.6,"Reminder + new products, small incentive after 75+ days gap (Email, WhatsApp opt-in only)"
+Lost,1622,174.5,1.0,296.1,553099.8,37.4,6.2,"One-time limited win-back offer, then stop (Automated email)"
+New / Potential Customers,837,17.0,2.0,480.3,466479.0,19.3,5.2,Free shipping on next order (Email / SMS)
